@@ -17,17 +17,19 @@
 </head>
 
 <body>
-    <nav>
-        <div class="left middle">
-            <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="bars"
-                class="pointer svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512">
-                <path
-                    d="M16 112H432C440.844 112 448 104.844 448 96S440.844 80 432 80H16C7.156 80 0 87.156 0 96S7.156 112 16 112ZM432 240H16C7.156 240 0 247.156 0 256S7.156 272 16 272H432C440.844 272 448 264.844 448 256S440.844 240 432 240ZM432 400H16C7.156 400 0 407.156 0 416S7.156 432 16 432H432C440.844 432 448 424.844 448 416S440.844 400 432 400Z"
-                    fill="currentColor" />
-            </svg>
+    <nav class="navbar center">
+        <div class="branding center">
+            <span class="center">
+                <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="bars"
+                    class="pointer svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path
+                        d="M16 112H432C440.844 112 448 104.844 448 96S440.844 80 432 80H16C7.156 80 0 87.156 0 96S7.156 112 16 112ZM432 240H16C7.156 240 0 247.156 0 256S7.156 272 16 272H432C440.844 272 448 264.844 448 256S440.844 240 432 240ZM432 400H16C7.156 400 0 407.156 0 416S7.156 432 16 432H432C440.844 432 448 424.844 448 416S440.844 400 432 400Z"
+                        fill="currentColor" />
+                </svg>
+            </span>
             <svg id="yt-logo-updated_yt3" viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet"
-                xmlns="http://www.w3.org/2000/svg" class="pointer">
+                xmlns="http://www.w3.org/2000/svg" class="pointer logo">
                 <g>
                     <path
                         d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z"
@@ -61,19 +63,19 @@
             </svg>
             <p>IN</p>
         </div>
-        <div class="center middle">
-            <div class="search middle" style="display: relative;">
-                <svg aria-hidden="true" style="position:absolute;display: none;" focusable="false"
-                    data-prefix="fa-light" data-icon="magnifying-glass"
-                    class="svg-inline--fa fa-magnifying-glass fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512">
+        <div class="searchbar center">
+            <div class="search center">
+                <svg aria-hidden="true" style="visibility: hidden;" focusable="false" data-prefix="fa-light"
+                    data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass fa-w-16" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
                         d="M507.312 484.688L365.85 343.227C397.041 306.848 416 259.676 416 208C416 93.125 322.875 0 208 0S0 93.125 0 208S93.125 416 208 416C259.676 416 306.848 397.039 343.225 365.852L484.687 507.312C487.812 510.438 491.906 512 496 512S504.188 510.438 507.312 507.312C513.562 501.062 513.562 490.938 507.312 484.688ZM208 384C110.953 384 32 305.047 32 208S110.953 32 208 32S384 110.953 384 208S305.047 384 208 384Z"
                         fill="currentColor" />
                 </svg>
-                <input type="text" placeholder="Search" onfocus="this.parentNode.children[0].style.display = 'inline'"
-                    onblur="this.parentNode.children[0].style.display = 'none'">
-                <button class="middle">
+                <input type="text" placeholder="Search"
+                    onfocus="this.parentNode.children[0].style.visibility = 'visible'"
+                    onblur="this.parentNode.children[0].style.visibility = 'hidden'">
+                <button class="center pointer">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="magnifying-glass"
                         class="svg-inline--fa fa-magnifying-glass fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
@@ -83,7 +85,7 @@
                     </svg>
                 </button>
             </div>
-            <button id="mic" class="middle">
+            <button id="mic" class="center pointer">
                 <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="microphone"
                     class="svg-inline--fa fa-microphone fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 384 512">
@@ -93,8 +95,28 @@
                 </svg>
             </button>
         </div>
-        <div class="right middle">
-            <button class="more middle">
+        <div class="login center">
+            <div class="mobile center">
+                <button class="center pointer mobile-btn">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="magnifying-glass"
+                        class="svg-inline--fa fa-magnifying-glass fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M507.312 484.688L365.85 343.227C397.041 306.848 416 259.676 416 208C416 93.125 322.875 0 208 0S0 93.125 0 208S93.125 416 208 416C259.676 416 306.848 397.039 343.225 365.852L484.687 507.312C487.812 510.438 491.906 512 496 512S504.188 510.438 507.312 507.312C513.562 501.062 513.562 490.938 507.312 484.688ZM208 384C110.953 384 32 305.047 32 208S110.953 32 208 32S384 110.953 384 208S305.047 384 208 384Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+                <button class="center pointer mobile-btn">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="microphone"
+                        class="svg-inline--fa fa-microphone fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512">
+                        <path
+                            d="M336 192C327.199 192 320 199.199 320 208V256C320 329.5 257.75 388.625 183.25 383.75C115.25 379.125 64 319.625 64 251.5V208C64 199.199 56.801 192 48 192S32 199.199 32 208V250.375C32 333.75 93.625 406.5 176 414.75V480H112C103.199 480 96 487.199 96 496C96 504.799 103.199 512 112 512H272C280.801 512 288 504.799 288 496C288 487.199 280.801 480 272 480H208V415C288.75 406.875 352 338.75 352 256V208C352 199.199 344.801 192 336 192ZM192 352C245 352 288 309 288 256V96C288 43 245 0 192 0S96 43 96 96V256C96 309 139 352 192 352ZM128 96C128 60.75 156.75 32 192 32S256 60.75 256 96V256C256 291.25 227.25 320 192 320S128 291.25 128 256V96Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+            </div>
+            <button class="more center pointer">
                 <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="ellipsis-vertical"
                     class="svg-inline--fa fa-ellipsis-vertical fa-w-4" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 128 512">
@@ -103,7 +125,7 @@
                         fill="currentColor" />
                 </svg>
             </button>
-            <button class="signIn middle">
+            <button class="signIn center pointer">
                 <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="circle-user"
                     class="svg-inline--fa fa-circle-user fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
@@ -170,8 +192,8 @@
                     <p>History</p>
                 </div>
             </div>
-            <div class="sidebar flex">
-                <div class="sidebar-item pointer">
+            <div class="sidebar">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="home"
                         class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 576 512">
@@ -182,7 +204,7 @@
                     </svg>
                     <span>Home</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="circle-s"
                         class="svg-inline--fa fa-circle-s fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
@@ -192,7 +214,7 @@
                     </svg>
                     <span>Shots</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="clapperboard-play"
                         class="svg-inline--fa fa-clapperboard-play fa-w-16" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -203,7 +225,7 @@
                     <span>Subscriptions</span>
                 </div>
                 <hr>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="circle-play"
                         class="svg-inline--fa fa-circle-play fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
@@ -213,7 +235,7 @@
                     </svg>
                     <span>You</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="clock-rotate-left"
                         class="svg-inline--fa fa-clock-rotate-left fa-w-16" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -224,7 +246,7 @@
                     <span>History</span>
                 </div>
                 <hr>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="fire-flame"
                         class="svg-inline--fa fa-fire-flame fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 384 512">
@@ -234,7 +256,7 @@
                     </svg>
                     <span>Trending</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="bag-shopping"
                         class="svg-inline--fa fa-bag-shopping fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512">
@@ -244,7 +266,7 @@
                     </svg>
                     <span>Shopping</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="music"
                         class="svg-inline--fa fa-music fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
@@ -254,7 +276,7 @@
                     </svg>
                     <span>Music</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="film"
                         class="svg-inline--fa fa-film fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
@@ -264,7 +286,7 @@
                     </svg>
                     <span>Films</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-regular" data-icon="signal-stream"
                         class="svg-inline--fa fa-signal-stream fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 576 512">
@@ -274,7 +296,7 @@
                     </svg>
                     <span>Live</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="gamepad-modern"
                         class="svg-inline--fa fa-gamepad-modern fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 640 512">
@@ -284,7 +306,7 @@
                     </svg>
                     <span>Gaming</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="newspaper"
                         class="svg-inline--fa fa-newspaper fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
@@ -294,7 +316,7 @@
                     </svg>
                     <span>News</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-thin" data-icon="trophy-star"
                         class="svg-inline--fa fa-trophy-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 576 512">
@@ -304,7 +326,7 @@
                     </svg>
                     <span>Sports</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="lightbulb-on"
                         class="svg-inline--fa fa-lightbulb-on fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 640 512">
@@ -314,7 +336,7 @@
                     </svg>
                     <span>Courses</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="spray-can"
                         class="svg-inline--fa fa-spray-can fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
@@ -324,7 +346,7 @@
                     </svg>
                     <span>Fashion and beauty</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="satellite-dish"
                         class="svg-inline--fa fa-satellite-dish fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
@@ -335,7 +357,7 @@
                     <span>Podcasts</span>
                 </div>
                 <hr>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false" aria-hidden="true"
                         style="pointer-events: none; display: inherit">
                         <defs>
@@ -369,7 +391,7 @@
                     </svg>
                     <span>YouTube premium</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false" aria-hidden="true"
                         style="pointer-events: none; display: inherit;">
                         <circle fill="#FF0000" cx="12" cy="12" r="10"></circle>
@@ -380,7 +402,7 @@
                     </svg>
                     <span>YouTube Music</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false" aria-hidden="true"
                         style="pointer-events: none; display: inherit;">
                         <path fill="#FF0000"
@@ -399,7 +421,7 @@
                     <span>YouTube Kids</span>
                 </div>
                 <hr>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="gear"
                         class="svg-inline--fa fa-gear fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
@@ -409,7 +431,7 @@
                     </svg>
                     <span>Settings</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="flag"
                         class="svg-inline--fa fa-flag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
@@ -419,7 +441,7 @@
                     </svg>
                     <span>Report History</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="circle-question"
                         class="svg-inline--fa fa-circle-question fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
@@ -429,7 +451,7 @@
                     </svg>
                     <span>Help</span>
                 </div>
-                <div class="sidebar-item pointer">
+                <div class="sidebar-item pointer center">
                     <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="message-exclamation"
                         class="svg-inline--fa fa-message-exclamation fa-w-16" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -441,14 +463,18 @@
                 </div>
             </div>
         </aside>
-        <main>
-            <div class="middle" id="nav-btns">
-                
+        <div class="main">
+            <div class="top-bar center">
+                <div class="bg-blur">
+                    <div class="left-arrow"><</div>
+                </div>
+                <div class="filters"></div>
+                <div class="bg-blur">
+                    <div class="right-arrow">></div>
+                </div>
             </div>
-            <div class="flex-container">
-                
-            </div>
-        </main>
+            <div class="content"></div>
+        </div>
     </main>
 </body>
 
