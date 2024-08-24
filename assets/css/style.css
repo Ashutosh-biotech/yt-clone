@@ -272,7 +272,6 @@ hr {
 
 .left-arrow {
 	padding: 3px 8px;
-	border: 1px solid black;
 	border-radius: 100px;
 	background-color: var(--secondary-color);
 }
@@ -280,7 +279,6 @@ hr {
 .right-arrow {
 	background-color: var(--secondary-color);
 	padding: 3px 8px;
-	border: 1px solid black;
 	border-radius: 100px;
 }
 
@@ -336,31 +334,31 @@ hr {
 }
 
 .bg-image6{
-	background: url(../img/bg-img-06.jpg);
+	background: url(../img/bg-img-06.jpeg);
 }
 
 .bg-image7{
-	background: url(../img/bg-img-07.jpg);
+	background: url(../img/bg-img-07.jpeg);
 }
 
 .bg-image8{
-	background: url(../img/bg-img-08.jpg);
+	background: url(../img/bg-img-08.jpeg);
 }
 
 .bg-image9{
-	background: url(../img/bg-img-09.jpg);
+	background: url(../img/bg-img-09.jpeg);
 }
 
 .bg-image10{
-	background: url(../img/bg-img-10.jpg);
+	background: url(../img/bg-img-10.jpeg);
 }
 
 .bg-image11{
-	background: url(../img/bg-img-11.jpg);
+	background: url(../img/bg-img-11.jpeg);
 }
 
 .bg-image12{
-	background: url(../img/bg-img-12.jpg);
+	background: url(../img/bg-img-12.jpeg);
 }
 
 .content{
@@ -375,6 +373,7 @@ hr {
 
 .videos .card{
 	width: 20rem;
+	position: relative;	
 }
 
 .videos .card .thumbnail {
@@ -388,7 +387,7 @@ hr {
 	right: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 	margin: 10px;
-	color: #fff;
+	color: var(--secondary-color);
 	border-radius: 5px;
 	padding: 3px;
 	font-size: 0.75rem;
@@ -418,6 +417,16 @@ hr {
 .videos .card .details p {
 	color: #5b5757;
 	font-size: 0.85rem;
+}
+
+.shorts-heading{
+	margin-top: 3rem;
+	justify-content: start;
+}
+
+.shorts-heading svg{
+	width: 1.5rem;
+	margin-left: 0.3rem;
 }
 
 .shorts-img1{
@@ -461,7 +470,7 @@ hr {
 	justify-content: initial;
 	align-items: initial;
 	gap: 1rem;
-	margin: 1rem 0;
+	margin: 1rem 0 3rem 0;
 }
 
 .shorts .card{
@@ -487,5 +496,29 @@ hr {
 	display: flex;
 }
 
+.more {
+	justify-content: end;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.more svg {
+	width: 0.4rem;
+}
+
+@media screen and (max-width: 1200px) {
+	.sidebar {
+		display: none;
+	}
+	.tab-sidebar {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 500px) {
+    aside {
+        display: none; /* Hide aside on small screens */
+    }
+}
 
 
