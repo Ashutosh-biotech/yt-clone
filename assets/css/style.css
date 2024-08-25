@@ -4,7 +4,6 @@
 	--font: 'Roboto', sans-serif;
 	--hover-bg-color: #e8e6e6;
 	--hover-bg-dark-color: #ccc;
-	--main-depart: 14rem;
 }
 
 * {
@@ -12,12 +11,12 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: var(--font);
+	scrollbar-width: thin;
+	scroll-behavior: smooth;
 }
 
 html {
-	scroll-behavior: smooth;
-	scrollbar-width: thin;
-	scrollbar-color: var(--hover-bg-color) var(--secondary-color);
+	scrollbar-color: var(--hover-bg-dark-color) var(--secondary-color);
 }
 
 .center {
@@ -154,6 +153,7 @@ html {
 	border-radius: 100px;
 	background-color: transparent;
 	color: blue;
+	text-wrap: nowrap;
 }
 
 .signIn:hover {
@@ -187,7 +187,7 @@ aside {
 }
 
 aside:hover {
-	scrollbar-color: var(--hover-bg-color) var(--secondary-color);
+	scrollbar-color: var(--hover--dark-color) var(--secondary-color);
 }
 
 .sidebar-item {
@@ -208,7 +208,7 @@ aside:hover {
 
 hr {
 	margin: 10px 0;
-	width: 98%;
+	width: 100%;
 	color: var(--hover-bg-color);
 }
 
@@ -242,7 +242,7 @@ hr {
 }
 
 .main {
-	margin-left: var(--main-depart);
+	margin-left: 14rem;
 	margin-top: 1rem;
 	margin-right: 1rem;
 }
@@ -297,6 +297,10 @@ hr {
 	width: 100%;
 	margin: 0 1rem;
 	justify-content: start;
+}
+
+.filters .tags:last-child {
+	visibility: hidden;
 }
 
 .filters span {
@@ -367,22 +371,24 @@ hr {
 
 .content {
 	margin-top: 1.5rem;
+	overflow: hidden;
 }
 
 .videos {
 	flex-wrap: wrap;
-	gap: 1rem;
+	gap: 0.5rem;
 	justify-content: start;
 }
 
 .videos .card {
-	width: 23rem;
+	width: 20rem;
 	position: relative;
+	height: 18rem;
 }
 
 .videos .card .thumbnail {
 	position: relative;
-	height: 15rem;
+	height: 12rem;
 }
 
 .videos .card .thumbnail .overlay {
@@ -424,7 +430,6 @@ hr {
 }
 
 .shorts-heading {
-	margin-top: 3rem;
 	justify-content: start;
 }
 
@@ -484,9 +489,16 @@ hr {
 .shorts {
 	justify-content: initial;
 	align-items: initial;
-	gap: 1rem;
+	gap: 0.5rem;
 	margin: 1rem 0 3rem 0;
 	width: 100%;
+	overflow: auto;
+	scrollbar-color: transparent transparent;
+	scrollbar-width: thin;
+}
+
+.shorts:hover {
+	scrollbar-color: var(--hover-bg-dark-color) var(--secondary-color);
 }
 
 .shorts .card {
@@ -496,6 +508,7 @@ hr {
 .shorts .card .thumbnail {
 	position: relative;
 	height: 33rem;
+	width: 16rem;
 }
 
 .shorts .card .thumbnail .image {
@@ -524,12 +537,18 @@ hr {
 
 .tab-sidebar {
 	display: none;
-	/*margin-top: 1rem;*/
+	margin-top: 1rem;
 }
 
 .tab-sidebar-item{
 	flex-direction: column;
-	margin: 1rem;
+	margin: 0 0.5rem;
+	padding: 1rem;
+	border-radius: 20px;
+}
+
+.tab-sidebar-item:hover {
+	background-color: var(--hover-bg-color);
 }
 
 .tab-sidebar-item svg {
@@ -541,13 +560,27 @@ hr {
 	margin-top: 0.2rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1440px) {
+	.videos .card {
+		width: 24rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
 	.sidebar {
 		display: none;
 	}
 
 	.tab-sidebar {
 		display: block;
+	}
+
+	.main {
+		margin-left: 8rem;
+	}
+
+	.videos .card {
+		width: 18rem;
 	}
 }
 
@@ -559,5 +592,28 @@ hr {
 
 	.main {
 		margin-left: 1rem;
+	}
+
+	.videos .card {
+		width: 100%;
+		height: 20rem;
+	}
+
+	.videos .card .thumbnail {
+		height: 15rem;
+	}
+
+	.navbar {
+		gap: 0rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.login button.more {
+		display: none;
+	}
+
+	.mobile-btn {
+		margin-left: 0;
 	}
 }

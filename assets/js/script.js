@@ -3,7 +3,7 @@ const random = (initial, final) => Math.floor(Math.random() * (final - initial +
 
 const $tags = [
 	"All", "Shots", "Games", "Music", "Sports", "Gaming",
-	"News", "Travel", "Sports", "Live", "Html", "Css", "Javascript", "C", "C++", "Python", "Java", "C#", "Ruby", "Rust", "Kotlin", "Php", "Swift", "AWS", "Azure", "Google cloud", "Devops"
+	"News", "Travel", "Sports", "Live", "Html", "Css", "Javascript", "C", "C++", "Python", "Java", "C#", "Ruby", "Rust", "Kotlin", "Php", "Swift", "AWS", "Azure", "Google cloud", "Devops", "h"
 ]
 
 const $videos = [
@@ -22,14 +22,14 @@ const $videos = [
 ]
 
 const $shorts = [
-	["shorts-img1", "ROmantic seen: Kiss Manhua", "1.2M views"],
+	["shorts-img1", "Romantic seen: Kiss Manhua", "1.2M views"],
 	["shorts-img2", "Elegant scenes of Anime", "107k views"],
 	["shorts-img3", "My way, your workout", "17k views"],
 	["shorts-img4", "Explore Grand library", "1M views"],
 	["shorts-img5", "Rose Fashion #fashion&beauty", "456 views"],
 	["shorts-img6", "Alien invasion #trending #alien", "200k views"],
 	["shorts-img7", "Attack on Trump, rampage in USA", "550k views"],
-	["shorts-img8", "Premier: Tour to Paris", "50k views"],
+	["shorts-img8", "Photoshop tips and tricks", "50k views"],
 	["shorts-img9", "Rocking Band", "700k views"],
 	["shorts-img10", "Worlds Dangerous snake", "100k views"],
 	["shorts-img11", "MEAN Roadmap", "10k views"],
@@ -112,7 +112,7 @@ for (let index = 0; index < repeat; index++) {
 // 		Upload 2
 const $upload2 = document.querySelector(".upload2");
 
-for (let index = 0; index < 4; index++) {
+for (let index = 0; index < 10; index++) {
 	let short = $shorts[random(0, 11)];
 	$upload2.innerHTML += `
 	<div class="card">
@@ -153,7 +153,7 @@ upload3();
 
 
 window.addEventListener("scroll", () => {
-	if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+	if (window.innerHeight + window.scrollY + 200 >= document.body.offsetHeight) {
 		upload3();
 	}
 });
