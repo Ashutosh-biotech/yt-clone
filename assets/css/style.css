@@ -313,67 +313,67 @@ hr {
 	background-color: var(--hover-bg-dark-color);
 }
 
-.bg-image1{
+.bg-image1 {
 	background: url(../img/bg-img-01.jpg);
 }
 
-.bg-image2{
+.bg-image2 {
 	background: url(../img/bg-img-02.jpg);
 }
 
-.bg-image3{
+.bg-image3 {
 	background: url(../img/bg-img-03.jpg);
 }
 
-.bg-image4{
+.bg-image4 {
 	background: url(../img/bg-img-04.jpg);
 }
 
-.bg-image5{
+.bg-image5 {
 	background: url(../img/bg-img-05.jpg);
 }
 
-.bg-image6{
+.bg-image6 {
 	background: url(../img/bg-img-06.jpeg);
 }
 
-.bg-image7{
+.bg-image7 {
 	background: url(../img/bg-img-07.jpeg);
 }
 
-.bg-image8{
+.bg-image8 {
 	background: url(../img/bg-img-08.jpeg);
 }
 
-.bg-image9{
+.bg-image9 {
 	background: url(../img/bg-img-09.jpeg);
 }
 
-.bg-image10{
+.bg-image10 {
 	background: url(../img/bg-img-10.jpeg);
 }
 
-.bg-image11{
+.bg-image11 {
 	background: url(../img/bg-img-11.jpeg);
 }
 
-.bg-image12{
+.bg-image12 {
 	background: url(../img/bg-img-12.jpeg);
 }
 
-.content{
+.content {
 	margin-top: 1.5rem;
 }
 
-.videos{
+.videos {
 	flex-wrap: wrap;
 	gap: 1rem;
 	justify-content: start;
 }
 
-.videos .card{
+.videos .card {
 	width: 20rem;
-	position: relative;	
+	position: relative;
 }
 
 .videos .card .thumbnail {
@@ -419,61 +419,72 @@ hr {
 	font-size: 0.85rem;
 }
 
-.shorts-heading{
+.shorts-heading {
 	margin-top: 3rem;
 	justify-content: start;
 }
 
-.shorts-heading svg{
+.shorts-heading svg {
 	width: 1.5rem;
 	margin-left: 0.3rem;
 }
 
-.shorts-img1{
+.shorts-img1 {
 	background: url(../img/shorts-01.jpg);
 }
-.shorts-img2{
+
+.shorts-img2 {
 	background: url(../img/shorts-02.jpg);
 }
-.shorts-img3{
+
+.shorts-img3 {
 	background: url(../img/shorts-03.jpg);
 }
-.shorts-img4{
+
+.shorts-img4 {
 	background: url(../img/shorts-04.jpg);
 }
-.shorts-img5{
+
+.shorts-img5 {
 	background: url(../img/shorts-05.jpeg);
 }
-.shorts-img6{
+
+.shorts-img6 {
 	background: url(../img/shorts-06.jpeg);
 }
-.shorts-img7{
+
+.shorts-img7 {
 	background: url(../img/shorts-07.jpeg);
 }
-.shorts-img8{
+
+.shorts-img8 {
 	background: url(../img/shorts-08.jpeg);
 }
-.shorts-img9{
+
+.shorts-img9 {
 	background: url(../img/shorts-09.jpeg);
 }
-.shorts-img10{
+
+.shorts-img10 {
 	background: url(../img/shorts-10.jpg);
 }
-.shorts-img11{
+
+.shorts-img11 {
 	background: url(../img/shorts-11.jpg);
 }
-.shorts-img12{
+
+.shorts-img12 {
 	background: url(../img/shorts-12.jpeg);
 }
 
-.shorts{
+.shorts {
 	justify-content: initial;
 	align-items: initial;
 	gap: 1rem;
 	margin: 1rem 0 3rem 0;
 }
 
-.shorts .card{
+.shorts .card {
 	width: 15rem;
 }
 
@@ -498,27 +509,35 @@ hr {
 
 .more {
 	justify-content: end;
-    align-items: flex-start;
-    flex: 1;
+	align-items: flex-start;
+	flex: 1;
 }
 
 .more svg {
 	width: 0.4rem;
 }
 
+.tab-sidebar {
+	display: none;
+}
+
 @media screen and (max-width: 1200px) {
 	.sidebar {
 		display: none;
 	}
+
 	.tab-sidebar {
 		display: block;
 	}
 }
 
 @media screen and (max-width: 500px) {
-    aside {
-        display: none; /* Hide aside on small screens */
-    }
+	aside {
+		display: none;
+		/* Hide aside on small screens */
+	}
+
+	.main {
+		margin-left: 1rem;
+	}
 }
-
-
