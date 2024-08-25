@@ -16,7 +16,7 @@ const $videos = [
 	["bg-image7", "Watch Anime: Warrior Girl", "570k views", "2 years ago"],
 	["bg-image8", "Roaring of thunder", "50k views", "1 year ago"],
 	["bg-image9", "Watch Isekai Anime", "700k views", "2 years 5 Months ago"],
-	["bg-image10", "Best of Beauty 2", "100k views", "6 days ago"],
+	["bg-image10", "Feel the mountains, valley and ardour the nature", "100k views", "6 days ago"],
 	["bg-image11", "Ancient Tree", "10k views", "9 years ago"],
 	["bg-image12", "Foresight in 3000s", "100k views", "11 hours ago"]
 ]

@@ -17,7 +17,7 @@
 html {
 	scroll-behavior: smooth;
 	scrollbar-width: thin;
-	scrollbar-color: var(--primary-color) var(--secondary-color);
+	scrollbar-color: var(--hover-bg-color) var(--secondary-color);
 }
 
 .center {
@@ -166,7 +166,7 @@ html {
 }
 
 .signIn span {
-	text-wrap: nowrap;
+	text-wrap: none;
 }
 
 main {
@@ -187,7 +187,7 @@ aside {
 }
 
 aside:hover {
-	scrollbar-color: var(--primary-color) var(--secondary-color);
+	scrollbar-color: var(--hover-bg-color) var(--secondary-color);
 }
 
 .sidebar-item {
@@ -208,6 +208,8 @@ aside:hover {
 
 hr {
 	margin: 10px 0;
+	width: 98%;
+	color: var(--hover-bg-color);
 }
 
 .mobile {
@@ -242,6 +244,7 @@ hr {
 .main {
 	margin-left: var(--main-depart);
 	margin-top: 1rem;
+	margin-right: 1rem;
 }
 
 .top-bar {
@@ -254,9 +257,6 @@ hr {
 	background-color: var(--secondary-color);
 	box-shadow: 0 0 10px 15px var(--secondary-color);
 	position: absolute;
-	top: 35%;
-	translate: 0 -35%;
-	bottom: 0;
 	text-wrap: nowrap;
 	user-select: none;
 }
@@ -303,6 +303,10 @@ hr {
 	padding: 5px 10px;
 	border-radius: 100px;
 	background-color: var(--hover-bg-color);
+}
+
+.tags {
+	text-wrap: nowrap;
 }
 
 .filters span:hover {
@@ -372,13 +376,13 @@ hr {
 }
 
 .videos .card {
-	width: 20rem;
+	width: 23rem;
 	position: relative;
 }
 
 .videos .card .thumbnail {
 	position: relative;
-	height: 12rem;
+	height: 15rem;
 }
 
 .videos .card .thumbnail .overlay {
@@ -482,15 +486,16 @@ hr {
 	align-items: initial;
 	gap: 1rem;
 	margin: 1rem 0 3rem 0;
+	width: 100%;
 }
 
 .shorts .card {
-	width: 15rem;
+	width: 17rem;
 }
 
 .shorts .card .thumbnail {
 	position: relative;
-	height: 27rem;
+	height: 33rem;
 }
 
 .shorts .card .thumbnail .image {
@@ -519,6 +524,21 @@ hr {
 
 .tab-sidebar {
 	display: none;
+	/*margin-top: 1rem;*/
+}
+
+.tab-sidebar-item{
+	flex-direction: column;
+	margin: 1rem;
+}
+
+.tab-sidebar-item svg {
+	width: 1.5rem;
+}
+
+.tab-sidebar-item p {
+	font-size: 0.7rem;
+	margin-top: 0.2rem;
 }
 
 @media screen and (max-width: 1200px) {
